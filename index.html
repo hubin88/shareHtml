@@ -1,0 +1,175 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport">
+    <meta name="Description" content="你网页的简述">
+    <title>分享</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div id="root">
+    <div>
+        <div class="share">
+            <div class="content">
+                <div class="title">
+                    <div class="user-img"><img
+                            src="./images/Koala.jpg" alt=""></div>
+                    <div class="name">
+                        <div>户彬</div>
+                    </div>
+                    <div class="money">
+                        <div>1元/人</div>
+                        <br>
+                        <div class="protect">交易保障</div>
+                    </div>
+                </div>
+                <div class="theme"><span
+                        class="theme-title">聚会主题</span><span
+                        class="party-state">召集中</span></div>
+                <div class="party-content">
+                    <div class="address">地点待定</div>
+                    <div class="time"><span>聚会时间</span></div>
+                    <div class="text">暂无聚会描述~</div>
+                    <div class="photo">
+                        <span><img src="./images/Koala.jpg" alt="" /></span>
+                        <span><img src="./images/Koala.jpg" alt="" /></span>
+                        <span><img src="./images/Koala.jpg" alt="" /></span>
+                        <span><img src="./images/Koala.jpg" alt="" /></span>
+                    </div>
+                </div>
+                <div class="phone"><a href="tel:13528716210"></a></div>
+            </div>
+            <div class="comment">
+                <div class="pane">
+                    <span class="comment-pane active">评论0</span>
+                    <span class="dividing-line">|</span>
+                    <span class="register-pane">报名0</span>
+                </div>
+                <div class="">
+                    <ul class="comment-content content-active">
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">刚刚</span></div>
+                                <div class="">评论内容</div>
+                            </div>
+                        </li>
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">刚刚</span></div>
+                                <div class="">评论内容</div>
+                            </div>
+                        </li>
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">刚刚</span></div>
+                                <div class="">评论内容</div>
+                            </div>
+                        </li>
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">刚刚</span></div>
+                                <div class="">评论内容</div>
+                            </div>
+                        </li>
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">刚刚</span></div>
+                                <div class="">评论内容</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="register-content">
+                        <li class="comment-list">
+                            <div class="userImg">
+                                <img src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">1人</span></div>
+                                <div class="">刚刚</div>
+                            </div>
+                        </li>
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">1人</span></div>
+                                <div class="">刚刚</div>
+                            </div>
+                        </li>
+                        <li class="comment-list">
+                            <div class="userImg"><img
+                                    src="./images/Koala.jpg" alt=""></div>
+                            <div>
+                                <div class="user"><span
+                                        class="user-nick">户彬</span><span
+                                        class="comment-time">1人</span></div>
+                                <div class="">刚刚</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="logo"><img
+                        src="./images/logo.png" alt=""></div>
+                <div class="louca">
+                    <div>楼咖</div>
+                    <div>同楼真实职场社区</div>
+                </div>
+                <div class="start-button">
+                    <button class="button">立即启动</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+  var comment = document.getElementsByClassName('comment-pane')[0];
+  var register = document.getElementsByClassName('register-pane')[0];
+  var commentContent = document.getElementsByClassName('comment-content')[0];
+  var registerContent = document.getElementsByClassName('register-content')[0];
+  var button = document.getElementsByClassName('button')[0];
+  comment.ontouchend = function () {
+    this.setAttribute('class', 'comment-pane active');
+    register.setAttribute('class', 'register-pane');
+    commentContent.setAttribute('class', 'comment-content content-active');
+    registerContent.setAttribute('class', 'register-content');
+  };
+  register.ontouchend = function () {
+    this.setAttribute('class', 'register-pane active');
+    comment.setAttribute('class', 'comment-pane');
+    commentContent.setAttribute('class', 'comment-content');
+    registerContent.setAttribute('class', 'register-content content-active');
+  }
+  button.ontouchend=function () {
+
+  }
+</script>
+</html>
